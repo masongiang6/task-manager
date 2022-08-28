@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    display:block;
+    background-color: rgb(234, 234, 234);
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 50px auto;
+    height: fit-content;
+    width: 50%;
+    border-radius: 5px;
+    border-color: gray;
+    box-shadow: 1px 1px 5px 5px gray;
+    padding: 20px;
+}
+
+.page--title {
+    margin-bottom: 15px;
+}
+
+.home--buttonwrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.home--button {
+    width: 100%;
+    height: 35px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.login-register--input{
+    height: 35px;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+}
+
+.login-register--button{
+    height: 35px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.login-register--message {
+    margin-bottom: 15px;
+}
+
+.logout-button{
+    float: right;
+    padding: 10px 10px;
+}
+
+.new-task-form{
+    display: flex;
+
+}
+
+.new-task-input {
+    width: 70%;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.new-task-button{
+    width: 30%;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid lightgray;
+    height: 32px;
+    cursor: pointer;
+}
+.no-task-message{
+    margin-top: 20px;
+}
+
+.task-wrapper{
+    display: flex;
+    border: 1px solid lightgray;
+    margin: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.task-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.delete-button {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}
