@@ -25,12 +25,12 @@ mongoose.connection.on("connected", () => {
 
 if(process.env.NODE_ENV === "production"){
     app.use(express.static("./client"))
-
+    console.log('testing')
     app.get("*", (req, res) => {
         res.sendFile(path.resolve("./client", "index.html"))
     })
 }
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT }...`)
+    console.log(`Server is listening on port test ${PORT }...`)
 })
