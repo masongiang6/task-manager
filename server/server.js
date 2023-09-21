@@ -28,7 +28,7 @@ if(process.env.NODE_ENV === "production"){
     app.use(express.static('./public'))
 
     app.get("*", (req, res) => {
-        res.sendFile('./main.html')
+        res.sendFile('./public/main.html')
     })
 }
 
