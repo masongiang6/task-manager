@@ -25,10 +25,10 @@ mongoose.connection.on("connected", () => {
 
 if(process.env.NODE_ENV === "production"){
     console.log('In production...')
-    app.use(express.static("./client/build"))
+    app.use(express.static(__dirname))
 
     app.get("*", (req, res) => {
-        res.sendFile("./client/build")
+        res.sendFile(__dirname + '/index.html')
     })
 }
 
