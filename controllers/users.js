@@ -30,7 +30,7 @@ const register = async (req, res) => {
     }
 
     try {
-        const hashPassword = await bcrypt.hash(req.body.password, salt())
+        const hashPassword = await bcrypt.hash(req.body.password, 10)
         const user = await User.create({email: email, password: hashPassword})
         return res.status(201).json({registered: true, message: "You are now registered!"})
     } catch(error) {
