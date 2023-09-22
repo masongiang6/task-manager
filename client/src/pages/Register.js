@@ -10,7 +10,7 @@ export default function Register() {
     const [registerStatusMessage, setRegisterStatusMessage] = React.useState("")
 
     function register() {
-        axios.post("/user/register",
+        axios.post("https://task-manager-backend-8ui7.onrender.com/user/register",
         {
             email: email,
             password: password

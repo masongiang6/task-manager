@@ -12,7 +12,7 @@ export default function Dashboard() {
     const [newTask, setNewTask] = React.useState("")
 
     React.useEffect(() => {
-        axios.get("/api/tasks", {
+        axios.get("https://task-manager-backend-8ui7.onrender.com/api/tasks", {
             headers: {
                 "Authorization": `Basic ${localStorage.getItem("token")}`
             }
@@ -31,7 +31,7 @@ export default function Dashboard() {
             return
         }
 
-        axios.post("/api/tasks", {task: newTask}, {
+        axios.post("https://task-manager-backend-8ui7.onrender.com/api/tasks", {task: newTask}, {
             headers: {
                 "Authorization": `Basic ${localStorage.getItem("token")}`
             }
@@ -46,7 +46,7 @@ export default function Dashboard() {
     }
 
     function deleteTask(id) {
-        axios.delete(`/api/tasks/${id}`, {
+        axios.delete(`https://task-manager-backend-8ui7.onrender.com/api/tasks/${id}`, {
             headers: {
                 "Authorization": `Basic ${localStorage.getItem("token")}`
             }
