@@ -10,7 +10,7 @@ export default function Login() {
     const [loginStatusMessage, setLoginStatusMessage] = React.useState("")
 
     function login() {
-        axios.post("/user/login",
+        axios.post("https://task-manager-backend-8ui7.onrender.com/user/login",
         {
             email: email,
             password: password
